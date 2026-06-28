@@ -11,11 +11,18 @@ settingsbtn.addEventListener("click",Settings);
 backbtn.addEventListener("click",Backtomenu)
 
 function Startnewgame(){
-    showscene("mapScene");
+    let choice = confirm(
+        "Start a New Game ? \n\nYour Current Progress Will Be Lost!"
+    );
+    if(choice){
+        resetsave();
+        showscene("mapScene");
+    }
 }
 
 function ContinueGame(){
-    alert("Adding Continue Game Feature Soon!");
+    gamedata = loadsave();
+    showscene("mapScene");
 }
 
 function Showaliens(){

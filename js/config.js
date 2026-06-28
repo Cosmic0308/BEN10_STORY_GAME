@@ -4,3 +4,5 @@ const GAME ={
     startingbenhp : 100,
     maxrecharge : 2
 };
+
+let gamedata = null;
