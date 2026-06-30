@@ -4,8 +4,6 @@ window.onload = function () {
     }
 
     gamedata = loadsave();
-    gamedata.chapter = 5;
-    savegame()
-    console.log(gamedata);
+    console.log(chapters)
     showscene("menuScene");
 };
