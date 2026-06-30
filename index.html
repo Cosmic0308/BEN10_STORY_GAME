@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BEN 10 STORY GAME</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/menu.css">    
+    <link rel="stylesheet" href="css/map.css">    
+
 </head>
 
 <body>
@@ -47,8 +49,18 @@
 
     <div id="mapScene" class="scene">
 
-        <h1>Chapter Map</h1>
+        <div class="map-container">
+            <h1 class="map-title">
+                Season 1
+            </h1> 
 
+            <div id="chapterlist"></div>
+
+            <button class="menu-btn" id="mapbackbtn">
+                ← Back
+            </button>
+
+        </div>
     </div>
 
     <div id="battleScene" class="scene">
@@ -83,5 +95,6 @@
 <script src="js/menu.js"></script>
 <script src="js/save.js"></script>
 <script src="js/app.js"></script>
+<script src="js/map.js"></script>
 
 </html>

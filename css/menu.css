@@ -9,8 +9,8 @@
 
 .game-title{
     font-size:3rem;
-    color:#8cff00;
-    text-shadow:0 0 20px #8cff00;
+    color:#3cff00;
+    text-shadow:0 0 20px #3cff00;
 }
 
 .game-subtitle{
@@ -31,7 +31,7 @@
 }
 
 .menu-btn:hover{
-    background:#2f8f00;
+    background:#30cc00;
     box-shadow: 0 0 15px limegreen;
     text-shadow: 0 0 8px black;
 }
@@ -44,5 +44,24 @@
     margin-top: 20px;
     color: grey;
     text-shadow: 0 0 2px limegreen;
+}
+
+#backbtn{
+    width: 100%;
+    max-width: 500px;
+    padding: 18px;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    cursor: pointer;
+    background: #1b1b1b;;
+    color: white;
+    transition: .25s;
+}
+
+#backbtn:hover{
+    background:#30cc00;
+    box-shadow: 0 0 15px limegreen;
+    text-shadow: 0 0 8px black;
 }
 

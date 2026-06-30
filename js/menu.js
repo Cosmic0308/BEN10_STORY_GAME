@@ -3,12 +3,14 @@ const continuebtn = document.getElementById("continuebtn");
 const aliensbtn = document.getElementById("aliensbtn");
 const settingsbtn = document.getElementById("settingsbtn");
 const backbtn = document.getElementById("backbtn");
+const mapbackbtn = document.getElementById("mapbackbtn")
 
 newgamebtn.addEventListener("click",Startnewgame);
 continuebtn.addEventListener("click",ContinueGame);
 aliensbtn.addEventListener("click",Showaliens);
 settingsbtn.addEventListener("click",Settings);
 backbtn.addEventListener("click",Backtomenu)
+mapbackbtn.addEventListener("click",Backtomenu)
 
 function Startnewgame(){
     let choice = confirm(
@@ -16,12 +18,14 @@ function Startnewgame(){
     );
     if(choice){
         resetsave();
+        loadmap();
         showscene("mapScene");
     }
 }
 
 function ContinueGame(){
     gamedata = loadsave();
+    loadmap();
     showscene("mapScene");
 }
 

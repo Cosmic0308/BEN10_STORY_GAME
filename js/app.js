@@ -4,7 +4,7 @@ window.onload = function () {
     }
 
     gamedata = loadsave();
-    gamedata.exp = 250;
+    gamedata.chapter = 5;
     savegame()
     console.log(gamedata);
     showscene("menuScene");
